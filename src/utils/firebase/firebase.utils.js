@@ -10,12 +10,12 @@ import {
 import { getFirestore, doc, getDoc, setDoc } from 'firebase/firestore';
 
 const firebaseConfig = {
-  apiKey: 'AIzaSyDDU4V-_QV3M8GyhC9SVieRTDM4dbiT0Yk',
-  authDomain: 'crwn-clothing-db-98d4d.firebaseapp.com',
-  projectId: 'crwn-clothing-db-98d4d',
-  storageBucket: 'crwn-clothing-db-98d4d.appspot.com',
-  messagingSenderId: '626766232035',
-  appId: '1:626766232035:web:506621582dab103a4d08d6',
+  apiKey: "AIzaSyAW9b6PQRcmq9cpLNJfEihDyWsHX3-fhBA",
+  authDomain: "crwn-clothing-web-app-udemy.firebaseapp.com",
+  projectId: "crwn-clothing-web-app-udemy",
+  storageBucket: "crwn-clothing-web-app-udemy.appspot.com",
+  messagingSenderId: "660864082664",
+  appId: "1:660864082664:web:df28b4fefb8cfde024df5d"
 };
 
 const firebaseApp = initializeApp(firebaseConfig);
@@ -36,7 +36,7 @@ export const db = getFirestore();
 
 export const createUserDocumentFromAuth = async (
   userAuth,
-  additionalInformation = {}
+  additionalInformation = {} 
 ) => {
   if (!userAuth) return;
 
